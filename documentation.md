@@ -16,11 +16,11 @@ project-root/
 │   │   ├── login_page.py      # Login page actions
 │   │   ├── home_page.py       # Home page actions (select products)
 │   │   └── cart_page.py       # Cart page actions (add/remove items)
-│   ├── test.py                # Main test file implementing all scenarios
+│   ├── test_all_scenarios.py                # Main test file implementing all scenarios
 │   └── conftest.py            # Fixtures: browser, page setup, screenshots
 │
 ├── .github/workflows/ci.yml   # CI/CD workflow
-├── requirements.txt           # Python dependencies
+├── requirement.txt           # Python dependencies
 ├── pytest.ini                 # Pytest configuration
 ├── report.html                # Generated HTML report
 └── README.md                  # Project documentation
@@ -73,7 +73,7 @@ project-root/
 - Run all tests:
 
 ```bash
-pytest tests/test.py -v --html=report.html --self-contained-html
+pytest tests/test_all_scenarios.py -v --html=report.html --self-contained-html
 ````
 
 * Open `report.html` to view detailed results.
@@ -82,7 +82,4 @@ pytest tests/test.py -v --html=report.html --self-contained-html
 
 ---
 
-This version is **compact, explanatory, and submission-ready**. It focuses on **five scenarios, project structure, and practical suggestions** without overwhelming details.  
-
-If you want, I can also create a **slightly more visual version** with **tables for scenarios and assertions**, which often looks better in GitHub. Do you want me to do that?
 ```
